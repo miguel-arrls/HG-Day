@@ -1,0 +1,276 @@
+/* Custom animations for birthday page */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes balloon-float {
+  0% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(-100vh) rotate(-2deg);
+  }
+}
+
+@keyframes party-bounce {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(5deg);
+  }
+}
+
+@keyframes smoke {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-30px) scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-80px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes cloud-drift {
+  0% {
+    transform: translateX(-100px) scale(0.8);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(100vw) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes cloud-rise {
+  0% {
+    transform: translateY(100px) scale(0.6);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100px) scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes smoke-swirl {
+  0% {
+    transform: translateY(50px) translateX(0) scale(0.3) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-20px) translateX(20px) scale(1) rotate(180deg);
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-80px) translateX(-10px) scale(1.5) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes heavy-smoke {
+  0% {
+    transform: translateY(40px) translateX(0) scale(0.4) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-10px) translateX(30px) scale(1.2) rotate(120deg);
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-60px) translateX(-20px) scale(1.8) rotate(240deg);
+    opacity: 0;
+  }
+}
+
+@keyframes dramatic-overlay {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes final-veil {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.95;
+  }
+}
+
+@keyframes flame-flicker {
+  0%,
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+  25% {
+    transform: scaleY(1.1) scaleX(0.9);
+  }
+  50% {
+    transform: scaleY(0.9) scaleX(1.1);
+  }
+  75% {
+    transform: scaleY(1.05) scaleX(0.95);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.animate-confetti-fall {
+  animation: confetti-fall linear infinite;
+}
+
+.animate-balloon-float {
+  animation: balloon-float linear infinite;
+}
+
+.animate-party-bounce {
+  animation: party-bounce 2s ease-in-out infinite;
+}
+
+.animate-smoke {
+  animation: smoke ease-out forwards;
+}
+
+.animate-cloud-drift {
+  animation: cloud-drift ease-out forwards;
+}
+
+.animate-cloud-rise {
+  animation: cloud-rise ease-out forwards;
+}
+
+.animate-smoke-swirl {
+  animation: smoke-swirl ease-out forwards;
+}
+
+.animate-heavy-smoke {
+  animation: heavy-smoke ease-out forwards;
+}
+
+.animate-dramatic-overlay {
+  animation: dramatic-overlay ease-in-out forwards;
+}
+
+.animate-final-veil {
+  animation: final-veil ease-in forwards;
+}
+
+.animate-flame-flicker {
+  animation: flame-flicker 0.5s ease-in-out infinite;
+}
+
+/* Smooth transitions for all interactive elements */
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ec4899, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #db2777, #7c3aed);
+}
