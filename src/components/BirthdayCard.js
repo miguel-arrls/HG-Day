@@ -70,8 +70,7 @@ const BirthdayCard = ({ name = 'Special Person', message, age }) => {
         {/* Footer */}
         <div className="text-center mt-8">
           <p className="text-gray-500 text-sm">
-            Estarais sempre em minhas orações para que tudo dê certo pra você!
-            🎉
+            Estarás sempre em minhas orações para que tudo dê certo pra você! 🎉
           </p>
         </div>
       </div>

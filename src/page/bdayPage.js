@@ -57,8 +57,8 @@ const BirthdayPage = ({ showAnimations = true }) => {
             🎉 Feliz Aniversário 🎉
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Hoje e sempre será dia para celebrar você e todas as coisas fodas
-            que você é!
+            Hoje e sempre será dia para celebrar você e o quão foda é a tua
+            pessoa!
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const BirthdayPage = ({ showAnimations = true }) => {
           <section className="flex justify-center">
             <div className="w-full max-w-2xl">
               <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
-                💝 Mensagem de Muito Carinho
+                💝 Singela Mensagem, Mas Com Muito Carinho
               </h2>
               <BirthdayCard
                 name={personData.name}

@@ -3,7 +3,7 @@ export const mockBirthdayData = {
     name: 'Anjo',
     age: 25,
     message:
-      'Hoje e todos os outros dias sempre serão dias para celebrar a pessoa incrível que és. Sua beleza ilumina todos os lugares por onde passa tal qual ouro cintilante ao redor do bronze monótono. És uma pessoa de personalidade singular, sempre me cativa com seu jeito sincero e integro de ser. Você uma moça de extrema força, Que seu dia seja tão radiante quanto o seu sorriso e tão especial quanto o brilho que você traz ao mundo. Feliz aniversário, Hanna! 🎉🎂🎈'
+      'Hoje e todos os outros dias sempre serão dias para celebrar a pessoa incrível que és. Sua beleza ilumina todos os lugares por onde passa, tal qual ouro cintilante ao redor do bronze monótono. És uma pessoa de personalidade singular, sempre me cativa com seu jeito sincero e integro de ser. Você uma moça de extrema força, que seu dia seja tão radiante quanto o seu sorriso e tão especial quanto o brilho que você traz ao mundo. Feliz aniversário, Hanna! 🎉🎂🎈'
   },
 
   music: {
@@ -13,24 +13,24 @@ export const mockBirthdayData = {
 
   images: [
     {
-      src: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=400&fit=crop',
-      alt: 'Birthday celebration',
-      caption: 'Celebrating another amazing year!'
+      src: 'https://imgur.com/2L1YYS9.jpg',
+      alt: 'Paz e amor versão Hanna',
+      caption: 'Mais um ano de vida com paz e amor!'
     },
     {
-      src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&h=400&fit=crop',
-      alt: 'Birthday cake',
-      caption: 'Make a wish!'
+      src: 'https://i.imgur.com/YQ0ZxEl.jpg',
+      alt: 'Versão Mini Hanna',
+      caption: 'Muito fofinha você!'
     },
     {
-      src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=400&fit=crop',
-      alt: 'Birthday party',
-      caption: 'Friends and memories'
+      src: 'https://i.imgur.com/UG87P2O.jpg',
+      alt: 'A Branquinha Que Mais Amo',
+      caption: 'A Branquinha Que Mais Amo'
     },
     {
-      src: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=400&fit=crop',
-      alt: 'Birthday gifts',
-      caption: 'Special surprises'
+      src: 'https://i.imgur.com/VSdm9UK.jpg',
+      alt: 'Foto Emoldurada',
+      caption: 'Te amo muito!'
     }
   ]
 }
